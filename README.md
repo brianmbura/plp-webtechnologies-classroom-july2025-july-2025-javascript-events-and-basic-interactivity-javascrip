@@ -1,58 +1,81 @@
-# 🧠 Assignment: Interactive Web Pages with JavaScript
+# 🚗 Online Car Rental Management System (Interactive Web Assignment)
 
-Welcome to the exciting world of interactivity! This assignment is all about **making your web pages feel alive**. You’ll learn how to respond to user actions, build engaging components, and validate form input—without reloading the page. This is where JavaScript gets fun, practical, and powerful. 🚀
-
----
-
-## 🎉 Part 1: JavaScript Event Handling and Interactive Elements
-
-Let’s start with the basics of **event handling**. You'll set up JavaScript to listen for user actions like clicks, mouseovers, keyboard input, and more—and respond to them in meaningful ways.
-
-**Goal:** Use event listeners to react to user behavior and trigger changes on the page (e.g., showing messages, toggling classes, hiding/showing content).
+This project is an **interactive prototype** of an Online Car Rental Management System.  
+It demonstrates the use of **JavaScript, HTML, and CSS** to create dynamic, user-friendly web pages.  
+The assignment focuses on **event handling, interactive elements, and form validation**.
 
 ---
 
-## 🎮 Part 2: Building Interactive Elements
+## 📂 Project Structure
 
-Now it’s time to apply what you’ve learned by creating your own mini interactive features. You can build things like:
-
-* A light/dark mode toggle
-* A counter or button game
-* A collapsible FAQ section
-* A simple dropdown menu
-* A tabbed interface
-
-**Goal:** Use DOM manipulation + events to make the page dynamic and engaging. Be creative!
 
 ---
 
-## 📋✅ Part 3: Form Validation with JavaScript
+## 🎯 Features
 
-Forms are essential to the web—and validating them properly is key to good user experience. You’ll build a form with multiple input fields (name, email, password, etc.) and write JavaScript to validate each field when the user submits or types.
+### 1. JavaScript Event Handling
+- **View More button** toggles extra car details (price, fuel type, transmission).
+- **Hover/Click interactions** highlight important sections.
 
-**Goal:** Prevent incorrect form submissions by writing custom validation logic using conditions and regular expressions. Show user-friendly error messages and success feedback.
+### 2. Interactive Elements
+- **Dark/Light mode toggle** for user customization.
+- **FAQ section** with collapsible answers for common rental questions.
+- **Dynamic total price calculation** (daily rate × number of days).
+
+### 3. Form Validation
+A custom **Booking Form** that validates:
+- ✅ **Name** (at least 3 characters)  
+- ✅ **Email** (valid email format via regex)  
+- ✅ **Phone** (Kenyan format: `07XXXXXXXX` or `+2547XXXXXXXX`)  
+- ✅ **Car selection** (must choose a car)  
+- ✅ **Rental dates** (end date must be after start date)  
+
+If all inputs are valid → a **success message** is shown.  
+If not → specific **error messages** are displayed below each field.
 
 ---
 
-## Deliverables
-
-* `index.html`: Your structured web page with at least one form and several interactive sections
-* `script.js`: Your JavaScript file with:
-
-  * Event handling for buttons, inputs, or links
-  * At least 2 interactive features created from scratch
-  * A fully functioning custom form validation (no HTML5-only validation)
-* `style.css` (optional but encouraged): To style your interactive elements
-
-Each section of your JavaScript should be commented to explain its purpose.
+## ⚡ How It Works
+1. Open `index.html` in any modern browser.  
+2. Explore:
+   - **Available Cars** → Click **View More** to see extra details.  
+   - **FAQ Section** → Click a question to expand/collapse answers.  
+   - **Booking Form** → Fill in details, select car & dates.  
+   - **Price Calculation** updates automatically.  
+   - **Submit** → Validation checks are performed.  
 
 ---
 
-## Outcome
+## 🛠️ Technologies Used
+- **HTML5** → Page structure  
+- **CSS3** → Styling and dark mode  
+- **JavaScript (Vanilla JS)** → Event handling, DOM manipulation, validation  
 
-* Use of event listeners and appropriate event types
-* Creativity and functionality of interactive elements
-* Form validation accuracy and helpfulness of feedback
-* Clear, modular, and well-commented JavaScript code
-* A clean and functional user experience
+---
 
+## ✅ Assignment Outcomes
+- **Event Listeners** → Buttons, inputs, dropdowns, dates.  
+- **DOM Manipulation** → Toggle classes, update content dynamically.  
+- **Custom Form Validation** → Regex + conditions (not HTML5-only).  
+- **User Experience** → Clear, modular, and well-commented code.  
+
+---
+
+## 📸 Preview (Features)
+- Dark mode toggle  
+- Car cards with details  
+- Interactive FAQ  
+- Booking form with real-time price calculation  
+
+---
+
+## 🚀 Next Steps (Future Enhancements)
+- Auto-fill booking form from "Book Now" button on car details.  
+- Integration with backend for real bookings.  
+- Payment gateway simulation.  
+- User dashboard for managing bookings.  
+
+---
+
+👨‍💻 **Author:** Brian Mbura  
+📅 **Date:** September 2025  
