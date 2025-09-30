@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Car Rental System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Online Car Rental</h1>
+    <button id="themeToggle">Theme</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling -->
+    <section>
+      <h2>Available Cars</h2>
+      <div class="car-card">
+        <h3>Toyota Corolla</h3>
+        <p>Basic info: Sedan, 5 seats</p>
+        <button class="viewDetails">View More</button>
+        <p class="details">Price: KES 5,000/day | Fuel: Petrol | Transmission: Automatic</p>
+      </div>
+      <div class="car-card">
+        <h3>Nissan X-Trail</h3>
+        <p>Basic info: SUV, 7 seats</p>
+        <button class="viewDetails">View More</button>
+        <p class="details">Price: KES 7,500/day | Fuel: Diesel | Transmission: Automatic</p>
+      </div>
+    </section>
+
+    <!-- Part 2: FAQ -->
+    <section>
+      <h2>FAQ</h2>
+      <div class="faq">
+        <h3 class="faq-question">Do I need insurance?</h3>
+        <p class="faq-answer">Yes, rental cars come with basic insurance coverage included.</p>
+      </div>
+      <div class="faq">
+        <h3 class="faq-question">Can I cancel my booking?</h3>
+        <p class="faq-answer">Cancellations are free up to 24 hours before pickup.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Booking Form -->
+    <section>
+      <h2>Book a Car</h2>
+      <form id="rentalForm" novalidate>
+        <label>Name: <input type="text" id="name"></label>
+        <small id="nameError" class="error"></small>
+
+        <label>Email: <input type="email" id="email"></label>
+        <small id="emailError" class="error"></small>
+
+        <label>Phone: <input type="text" id="phone"></label>
+        <small id="phoneError" class="error"></small>
+
+        <label>Car:
+          <select id="carSelect">
+            <option value="">--Select a car--</option>
+            <option value="corolla">Toyota Corolla</option>
+            <option value="xtrail">Nissan X-Trail</option>
+          </select>
+        </label>
+        <small id="carError" class="error"></small>
+
+        <label>Start Date: <input type="date" id="startDate"></label>
+        <small id="startError" class="error"></small>
+
+        <label>End Date: <input type="date" id="endDate"></label>
+        <small id="endError" class="error"></small>
+
+        <button type="submit">Submit Booking</button>
+        <p id="successMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

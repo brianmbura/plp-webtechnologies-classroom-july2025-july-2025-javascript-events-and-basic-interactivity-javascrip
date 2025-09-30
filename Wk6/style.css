@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.car-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.details {
+  display: none;
+  margin-top: 5px;
+  color: #555;
+}
+
+.faq-answer {
+  display: none;
+  margin-left: 20px;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+}
+
+#successMsg {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
